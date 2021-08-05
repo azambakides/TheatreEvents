@@ -1,34 +1,31 @@
 package com.andraea.app;
 
 import com.andraea.app.model.Show;
+import com.andraea.app.model.ShowTemplates;
 
-import java.time.LocalDateTime;
-
-/**
- * Hello world!
- *
- */
 public class Main
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Welcome to The Zamba Theatre " );
+        System.out.println( "Which of these shows would you like to see?");
+        System.out.println(Show.TheNutcracker.getShowName());
 
-        Show showOne = new Show();
-        showOne.setNameOfTheShow("The Nutcracker");
-        showOne.setLocalDateTime(LocalDateTime.now());
-
-        Show showTwo = new Show();
-        showTwo.setNameOfTheShow("An Inspector Calls");
-        showTwo.setLocalDateTime(LocalDateTime.now());
-
-        Show showThree = new Show();
-        showThree.setNameOfTheShow("Joseph and the Amazing Technicolor Dreamcoat");
-        showThree.setLocalDateTime(LocalDateTime.now());
-
-        System.out.println(showOne.getNameOfTheShow() + " " + showOne.getLocalDateTime());
-        System.out.println(showTwo.getNameOfTheShow() + " " + showTwo.getLocalDateTime());
-        System.out.println(showThree.getNameOfTheShow() + " " + showThree.getLocalDateTime());
+//        ShowTemplates showTemplatesOne = new ShowTemplates();
+//        showTemplatesOne.setNameOfTheShow("The Nutcracker");
+//        showTemplatesOne.setLocalDateTime(LocalDateTime.now());
+//
+//        ShowTemplates showTemplatesTwo = new ShowTemplates();
+//        showTemplatesTwo.setNameOfTheShow("An Inspector Calls");
+//        showTemplatesTwo.setLocalDateTime(LocalDateTime.now());
+//
+//        ShowTemplates showTemplatesThree = new ShowTemplates();
+//        showTemplatesThree.setNameOfTheShow("Joseph and the Amazing Technicolor Dreamcoat");
+//        showTemplatesThree.setLocalDateTime(LocalDateTime.now());
+//
+//        System.out.println(showTemplatesOne.getNameOfTheShow() + " " + showTemplatesOne.getLocalDateTime());
+//        System.out.println(showTemplatesTwo.getNameOfTheShow() + " " + showTemplatesTwo.getLocalDateTime());
+//        System.out.println(showTemplatesThree.getNameOfTheShow() + " " + showTemplatesThree.getLocalDateTime());
 
     }
 }
