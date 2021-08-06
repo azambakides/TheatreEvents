@@ -1,26 +1,14 @@
 package com.andraea.app.model;
 
-import java.time.LocalDateTime;
-
 public class Show {
 
-    private LocalDateTime localDateTime;
-    private String nameOfTheShow;
+/// Details of the Show
+    public static TheatreTemplates TheNutcracker = new TheatreTemplates( "21/12/2021", "11.30am", "3.30pm", "7.30pm", "The Nutcracker", 30.00 );
 
-    public LocalDateTime getLocalDateTime() {
-        return localDateTime;
-    }
+    public static TheatreTemplates AnInspectorCalls = new TheatreTemplates( "09/09/2021", "11.30am", "3.30pm", "7.30pm","An Inspector Calls", 20.00 );
 
-    public void setLocalDateTime(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
-    }
+    public static TheatreTemplates JosephAndTheAmazingTechnicolorDreamcoat = new TheatreTemplates("10/11/2021", "11.30am", "3.30pm", "7.30pm","Joseph and the Amazing Technicolor Dreamcoat", 15.00);
 
-    public String getNameOfTheShow() {
-        return nameOfTheShow;
-    }
-
-    public void setNameOfTheShow(String nameOfTheShow) {
-        this.nameOfTheShow = nameOfTheShow;
-    }
+    public static TheatreTemplates LaBoheme = new TheatreTemplates("11/11/2021", "11.30am", "3.30pm", "7.30pm", "La Boheme", 35.50);
 
 }
