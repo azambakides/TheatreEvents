@@ -1,7 +1,6 @@
 package com.andraea.app;
 
 import com.andraea.app.model.Show;
-import com.andraea.app.model.TheatreTemplates;
 
 public class Main
 {

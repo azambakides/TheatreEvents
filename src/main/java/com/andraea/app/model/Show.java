@@ -11,4 +11,9 @@ public class Show {
 
     public static TheatreTemplates LaBoheme = new TheatreTemplates("11/11/2021", "11.30am", "3.30pm", "7.30pm", "La Boheme", 35.50);
 
+    // ArrayList
+//   public static List<TheatreTemplates> getAllShows() {
+//
+//       List.add
+//   }
 }
