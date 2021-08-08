@@ -68,12 +68,12 @@ public class TheatreTemplates {
 
     public void printShow() {
         System.out.println(
-                this.showName + " " +
-                this.showDate + " " +
+                this.showName + " " + "on" + " " +
+                this.showDate + " " + "@" + " " +
                         this.showTime1 + " " +
                         this.showTime2 + " " +
-                        this.getShowTime3 + " " +
-                        this.price
+                        this.getShowTime3 + " " + "for" + " " +
+                        this.price + " " + "AUD"
         );
 
     }
