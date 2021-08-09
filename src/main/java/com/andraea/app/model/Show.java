@@ -5,16 +5,18 @@ import java.util.List;
 public class Show {
 
     /// Details of the Show
-    public static TheatreTemplates TheNutcracker = new TheatreTemplates("21/12/2021", "11.30am", "3.30pm", "7.30pm", "The Nutcracker", 30.99);
+    public static TheatreTemplates TheNutcracker = new TheatreTemplates("21/12/2021", "6pm", "The Nutcracker", 31.99);
 
-    public static TheatreTemplates AnInspectorCalls = new TheatreTemplates("09/09/2021", "1.30pm", "4.30pm", "8.30pm", "An Inspector Calls", 20.99);
+    public static TheatreTemplates AnInspectorCalls = new TheatreTemplates("09/09/2021", "7.30pm", "An Inspector Calls", 24.99);
 
-    public static TheatreTemplates JosephAndTheAmazingTechnicolorDreamcoat = new TheatreTemplates("10/11/2021", "10.30am", "1.30pm", "7.30pm", "Joseph and the Amazing Technicolor Dreamcoat", 15.99);
+    public static TheatreTemplates Cats = new TheatreTemplates("08/10/2021", "6.30pm", "Cats", 21.99);
 
-    public static TheatreTemplates LaBoheme = new TheatreTemplates("11/11/2021", "12.00pm", "4.00pm", "8.00pm", "La Boheme", 35.99);
+    public static TheatreTemplates LaBoheme = new TheatreTemplates("11/11/2021", "8pm", "La Boheme", 29.99);
+
+    public static TheatreTemplates PixarInConcert=  new TheatreTemplates("27/08/2021", "7pm", "Pixar In Concert", 19.99);
 
     public static List<TheatreTemplates> getAllShows() {
-        return List.of(TheNutcracker, AnInspectorCalls, JosephAndTheAmazingTechnicolorDreamcoat, LaBoheme);
+        return List.of(TheNutcracker, AnInspectorCalls, Cats, LaBoheme, PixarInConcert);
     }
 
 }
