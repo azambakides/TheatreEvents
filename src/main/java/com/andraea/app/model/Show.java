@@ -18,5 +18,4 @@ public class Show {
     public static List<TheatreTemplates> getAllShows() {
         return List.of(TheNutcracker, AnInspectorCalls, Cats, LaBoheme, PixarInConcert);
     }
-
 }

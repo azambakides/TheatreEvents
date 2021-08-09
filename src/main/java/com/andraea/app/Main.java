@@ -23,7 +23,7 @@ public class Main {
             }
         }
         if(!foundSelectedShow){
-            System.out.println("Oops! Sorry. This show cannot be found.");
+            System.out.println("Oops! Sorry. This show cannot be found!");
         } else {
             System.out.println("Enjoy the show!");
         }

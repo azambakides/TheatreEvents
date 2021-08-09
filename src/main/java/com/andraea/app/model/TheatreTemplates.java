@@ -65,7 +65,5 @@ public class TheatreTemplates {
                         this.showTime + " " + "for" + " " +
                         "$" + this.price
         );
-
     }
-
 }
