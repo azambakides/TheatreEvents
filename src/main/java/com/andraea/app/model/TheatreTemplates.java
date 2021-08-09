@@ -8,7 +8,7 @@ public class TheatreTemplates {
     private String showName;
     private double price;
 
-
+    // Constructors
     public TheatreTemplates(String showDate, String showTime1, String showTime2, String getShowTime3, String showName, double price) {
         this.showDate = showDate;
         this.showTime1 = showTime1;
@@ -18,6 +18,7 @@ public class TheatreTemplates {
         this.price = price;
     }
 
+    // Getters and Setters
     public String getShowDate() {
         return showDate;
     }
@@ -66,6 +67,7 @@ public class TheatreTemplates {
         this.price = price;
     }
 
+    // Printing out show times together
     public void printShow() {
         System.out.println(
                 this.showName + " " + "on" + " " +
@@ -73,7 +75,7 @@ public class TheatreTemplates {
                         this.showTime1 + " " +
                         this.showTime2 + " " +
                         this.getShowTime3 + " " + "for" + " " +
-                        this.price + " " + "AUD"
+                        "$" + this.price + " " + "AUD"
         );
 
     }

@@ -1,6 +1,5 @@
 package com.andraea.app.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Show {
@@ -14,7 +13,8 @@ public class Show {
 
     public static TheatreTemplates LaBoheme = new TheatreTemplates("11/11/2021", "12.00pm", "4.00pm", "8.00pm", "La Boheme", 35.99);
 
-    public static List<TheatreTemplates> Show = new ArrayList<>(List.of(
-            TheNutcracker, AnInspectorCalls, JosephAndTheAmazingTechnicolorDreamcoat, LaBoheme
-    ));
+    public static List<TheatreTemplates> getAllShows() {
+        return List.of(TheNutcracker, AnInspectorCalls, JosephAndTheAmazingTechnicolorDreamcoat, LaBoheme);
+    }
+
 }

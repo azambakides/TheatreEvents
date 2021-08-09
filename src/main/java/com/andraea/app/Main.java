@@ -3,37 +3,23 @@ package com.andraea.app;
 import com.andraea.app.model.Show;
 import com.andraea.app.model.TheatreTemplates;
 
-public class Main
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Welcome to The Zamba Theatre!" );
-        System.out.println( "Which of these shows would you like to see?");
+import java.util.Scanner;
 
-        for (TheatreTemplates theatreTemplates : Show.Show) {
+public class Main {
+
+    public static void main( String[] args ) {
+        System.out.println("Welcome to The Zamba Theatre!");
+        System.out.println("What show would you like to look for?");
+
+//        Scanner select = new Scanner(System.in);
+//        Scanner choice = new Scanner(System.in);
+//
+//        System.out.println("Please enter the name of the show:");
+
+        for (TheatreTemplates theatreTemplates : Show.getAllShows()) {
             theatreTemplates.printShow();
         }
 
-//        System.out.println(Show.TheNutcracker.getShowName() + " " + Show.TheNutcracker.getShowDate() + " " + Show.TheNutcracker.getShowTime1());
-//        System.out.println(Show.AnInspectorCalls.getShowName() + " " + Show.AnInspectorCalls.getShowDate() + " " + Show.AnInspectorCalls.getShowTime2());
-//        System.out.println(Show.JosephAndTheAmazingTechnicolorDreamcoat.getShowName() + " " + Show.JosephAndTheAmazingTechnicolorDreamcoat.getShowDate() + " " + Show.JosephAndTheAmazingTechnicolorDreamcoat.getGetShowTime3());
-//        System.out.println(Show.LaBoheme.getShowName() + " " + Show.LaBoheme.getShowDate() + " " + Show.LaBoheme.getShowTime1());
-
-//        ShowTemplates showTemplatesOne = new ShowTemplates();
-//        showTemplatesOne.setNameOfTheShow("The Nutcracker");
-//        showTemplatesOne.setLocalDateTime(LocalDateTime.now());
-//
-//        ShowTemplates showTemplatesTwo = new ShowTemplates();
-//        showTemplatesTwo.setNameOfTheShow("An Inspector Calls");
-//        showTemplatesTwo.setLocalDateTime(LocalDateTime.now());
-//
-//        ShowTemplates showTemplatesThree = new ShowTemplates();
-//        showTemplatesThree.setNameOfTheShow("Joseph and the Amazing Technicolor Dreamcoat");
-//        showTemplatesThree.setLocalDateTime(LocalDateTime.now());
-//
-//        System.out.println(showTemplatesOne.getNameOfTheShow() + " " + showTemplatesOne.getLocalDateTime());
-//        System.out.println(showTemplatesTwo.getNameOfTheShow() + " " + showTemplatesTwo.getLocalDateTime());
-//        System.out.println(showTemplatesThree.getNameOfTheShow() + " " + showTemplatesThree.getLocalDateTime());
-
     }
+
 }
