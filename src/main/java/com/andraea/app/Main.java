@@ -23,7 +23,10 @@ public class Main {
             }
         }
         if(!foundSelectedShow){
-            System.out.println("Oops! Sorry. This show cannot be found!");
+            System.out.println("Oops! Sorry. This show cannot be found! But these are the shows we have available: ");
+            for (TheatreTemplates showIteration : Show.getAllShows()) {
+                showIteration.printShow();
+            }
         } else {
             System.out.println("Enjoy the show!");
         }
