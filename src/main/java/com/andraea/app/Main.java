@@ -17,7 +17,7 @@ public class Main {
 
         boolean foundSelectedShow = foundSelectedShow(inputByUser);
         if(!foundSelectedShow){
-            System.out.println("Oops! Sorry - this show cannot be found! But, these are the shows we have these shows available: ");
+            System.out.println("Oops! Sorry - this show cannot be found! However, these are the shows we have available: ");
             for (TheatreTemplates showIteration : Show.getAllShows()) {
                 showIteration.printShow();
             }
@@ -29,7 +29,7 @@ public class Main {
     public static boolean foundSelectedShow(String inputByUser) {
         boolean foundSelectedShow = false;
         for (TheatreTemplates showIteration : Show.getAllShows()) {
-            if(inputByUser.equalsIgnoreCase(showIteration.getShowName())) {
+            if(inputByUser.trim().equalsIgnoreCase(showIteration.getShowName())) {
                 showIteration.printShow();
                 foundSelectedShow = true;
             }
