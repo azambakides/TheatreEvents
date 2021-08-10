@@ -15,6 +15,18 @@ public class Main {
 
         String inputByUser = selectShow.nextLine();
 
+        boolean foundSelectedShow = foundSelectedShow(inputByUser);
+        if(!foundSelectedShow){
+            System.out.println("Oops! Sorry - this show cannot be found! But, these are the shows we have these shows available: ");
+            for (TheatreTemplates showIteration : Show.getAllShows()) {
+                showIteration.printShow();
+            }
+        } else {
+            System.out.println("Enjoy the show!");
+        }
+    }
+
+    public static boolean foundSelectedShow(String inputByUser) {
         boolean foundSelectedShow = false;
         for (TheatreTemplates showIteration : Show.getAllShows()) {
             if(inputByUser.equalsIgnoreCase(showIteration.getShowName())) {
@@ -22,13 +34,6 @@ public class Main {
                 foundSelectedShow = true;
             }
         }
-        if(!foundSelectedShow){
-            System.out.println("Oops! Sorry. This show cannot be found! But these are the shows we have available: ");
-            for (TheatreTemplates showIteration : Show.getAllShows()) {
-                showIteration.printShow();
-            }
-        } else {
-            System.out.println("Enjoy the show!");
-        }
+        return foundSelectedShow;
     }
 }
