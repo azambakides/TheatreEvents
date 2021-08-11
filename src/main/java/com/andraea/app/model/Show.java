@@ -15,6 +15,7 @@ public class Show {
 
     public static TheatreTemplates PixarInConcert=  new TheatreTemplates("27/08/2021", "7pm", "Pixar In Concert", 19.99);
 
+    // All the shows together in a list
     public static List<TheatreTemplates> getAllShows() {
         return List.of(TheNutcracker, AnInspectorCalls, Cats, LaBoheme, PixarInConcert);
     }
